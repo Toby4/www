@@ -3,14 +3,18 @@ $(document).ready(function() {
 	$("#submit").click(function() {
 
 		var username;
+		var password;
 
 		username = document.getElementById("username").value;
+		password = document.getElementById("password").value;
 
-		if(username == "monty" || username == "jacob") {
-			$("#login").submit();
-		} else {
-			alert("Woops, this feature isn't available yet.");
-		}
+		$.ajax({
+  			url: "http://dev.montyanderson.co.uk/zenco/login.php",
+  			data: {username: username, password: password},
+  			type: "GET"
+		}).done(function(data) {
+			alert(data);
+  		});
 
 	});
 
