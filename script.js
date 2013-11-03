@@ -13,7 +13,9 @@ $(document).ready(function() {
   			data: {username: username, password: password},
   			type: "GET"
 		}).done(function(data) {
-			alert(data);
+			$("#modal > div > div > div > pre").text(data);
+			$("#modal").modal();
+			$("#modal").draggable();
   		});
 
 	});

@@ -9,11 +9,13 @@
 
     <title>Zen Co</title>
 
-    <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/wdlo2k9nv2yadyo/Zen%20Co.ico" />
+    <link rel="shortcut icon" href="//dl.dropboxusercontent.com/s/wdlo2k9nv2yadyo/Zen%20Co.ico" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 
   </head>
@@ -50,7 +52,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Zen Co</h1>
-        <p>Software that just works.</p>
+        <p>Software that <i>just</i> works.</p>
         <p><a class="btn btn-primary btn-lg" role="button" id="download" href="https://dl.dropboxusercontent.com/s/6zm9ril4urd639s/Zen%20Co.exe">
           Have a license key?<br>Download the launcher...</a></p>
       </div>
@@ -84,6 +86,23 @@
         <p>&copy; Zen Co 2013</p>
       </footer>
     </div>
+
+<div class="modal fade" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <pre></pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
