@@ -15,7 +15,7 @@ $(document).ready(function() {
 		}).done(function(data) {
 			$("#modal > div > div > div > pre").text(data);
 			$("#modal").modal();
-			$("#modal").draggable();
+			//$("#modal").draggable();
   		});
 
 	});
