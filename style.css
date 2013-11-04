@@ -17,6 +17,14 @@ img {
 	height: 1em;
 }
 
+#title {
+  float: left;
+}
+
+#downloads {
+  float: right;
+}
+
 #like {
 	padding-left: 1em;
 }
